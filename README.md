@@ -1,4 +1,3 @@
-# resnet18
 # Enter your network definition here.
 # Use Shift+Enter to update the visualization.
 name: "ResNet-18"
