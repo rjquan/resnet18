@@ -1,0 +1,70 @@
+import numpy as np
+
+
+######## Followings are the code for fusion ########
+def fuse_feature(file_names, key_features, fusion_way):
+
+    accepted_fusion_ways = ['max', 'avg']        
+    assert fusion_way in accepted_fusion_ways
+
+    # get the dict pid_image_map, i.e., input a pid, return the image index list of it.
+    pid_image_map = {}
+    for idx, image_name in enumerate(file_names):
+        person_id = image_name[:10]
+        # get the image idx list of the same person
+        current_pid = pid_image_map.get(person_id, [])
+        current_pid.append(idx)
+        pid_image_map[person_id] = current_pid
+
+
+    person_ids = sorted(pid_image_map.keys())
+    fused_features = []
+
+    # fuse features
+    for pid in person_ids:
+        indexes = pid_image_map[pid]
+        person_features = key_features[indexes]
+
+        if fusion_way == 'avg':
+            fused_feature = np.mean(person_features, axis=0)
+        elif fusion_way == 'max':
+            fused_feature = np.amax(person_features, axis=0)
+        else:
+            raise KeyError
+        
+        print pid,  'origin features', person_features.shape, 'after fusion:', fused_feature.shape
+        fused_features.append(fused_feature)
+
+    fused_features = np.array(fused_features)
+    return person_ids, fused_features
+
+
+
+def create_test_data():
+    n_image = 300  # number of total images
+    n_person = 100 # number of total persons
+    
+    # create file name list 
+    file_names = []
+    for person_id in range(n_person):
+        for frame_id in range(3):
+            file_names.append('person{:0>4d}_frame{:0>2d}.png'.format(person_id, frame_id))
+
+    # create gallery features
+    key_features = np.random.random((n_image, 512))
+    
+    return file_names, key_features
+
+
+def main():
+    # create data for testing, you should remove this part in the final code
+    file_names, key_features = create_test_data()
+
+    # fusion
+    person_lists, fused_features = fuse_feature(file_names, key_features, fusion_way='max')
+    print 'origin key features shape', key_features.shape,  'fused feature shape', fused_features.shape
+    print person_lists
+
+if __name__ ==  '__main__':
+    main()
+
