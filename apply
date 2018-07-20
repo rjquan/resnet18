@@ -1,0 +1,65 @@
+
+ 
+
+FACULTY OF SCIENCE
+
+RESEARCH DEGREES: PROJECT PLAN
+
+TO BE COMPLETED IN CONSULTATION WITH PROPOSED SUPERVISOR
+
+
+
+Name:	    Ruijie Quan							Degree:   PhD  
+
+
+Proposed Supervisor:  Yi Yang
+
+
+1.  	Project title:
+A Fast Retrieval Approach to Educational Data Management
+
+2.	Summary of Project (200 words):
+The increasing rate at which data are generated in many application areas gives rise to the need for retrieval systems to provide an effective and efficient access to databases, based on these data’ visual content (color, shape, and/or texture). There are two main approaches to access a database: a query driven approach which allows the user to specify either a text query (keywords, annotations, etc) or a data query; on the other hand, a browsing driven approach allows users to navigate through the database until they identify a data of interest and then, initiate a search using that data as the query data. The proposed project is an application of some of my current research to the educational domain. The data come from the educational data management domain and the goal is to build a fast retrieval system to students or teachers to exploit the educational resources.
+	
+
+3.  	Project details:
+
+3.1	Aims and Objectives:
+Annotate data from the educational management database; Find other relevant data resources in the database that are most similar with the query data; for example, if a student is exposed for the first time to a certain project, the system will retrieve data in its database with similar abnormalities of different resources along with their previously identified diagnosis. To propose a faster approach to retrieve the data and it will consume less computing resources.
+
+3.2	Project Significance:  (identify the gap in current knowledge to be addressed in the project)
+One of the benefits is that over time, the school will have an educational resource database whose content has been determined by the relevant teacher before; consequently, a common database will allow the distribution of data among students and teachers for review or sharing a study. Faster operation and less computational computing resources enable the project to be applied more quickly.
+
+
+4.	Resources required:
+
+4.1	Experimental Design and Investigation:
+ (include details on equipment you require for this project? Is it available at UTS, or other accessible location?)
+The research needs a high-performance server with GPUs to build and test the model proposed, and it is available in UTS, CAI.
+
+4.2	Data Collection and Validation:
+(include details on access to any specialist software or other facilities that are NOT currently available at UTS?)
+
+4.3	If the project requires access to external sites what arrangements have been made for this?
+
+
+
+
+
+5.	Risk assessment:
+
+5.1	What type of ethics clearance is required for this project?( Human, Animal, Biosafety)
+	No.
+
+5.2.	What arrangements have been made to apply for these?
+	The candidate has designed and implemented several models concerning with 
+
+
+	
+6.	Project timeline:
+
+6.1	Provide detailed project timeline for the 1st year of candidature
+
+6.2	Can the project be completed is 3 years (for PhD) ; or  1.5 years (for MSc)
+
+
