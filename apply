@@ -25,10 +25,15 @@ The increasing rate at which data are generated in many application areas gives 
 3.  	Project details:
 
 3.1	Aims and Objectives:
-Annotate data from the educational management database; Find other relevant data resources in the database that are most similar with the query data; for example, if a student is exposed for the first time to a certain project, the system will retrieve data in its database with similar abnormalities of different resources along with their previously identified diagnosis. To propose a faster approach to retrieve the data and it will consume less computing resources.
+Annotate data from the educational management database; Find other relevant data resources in the database that are most similar 
+with the query data; for example, if a student is exposed for the first time to a certain project, the system will retrieve data 
+in its database with similar abnormalities of different resources along with their previously identified diagnosis. To propose a 
+faster approach to retrieve the data and it will consume less computing resources.
 
 3.2	Project Significance:  (identify the gap in current knowledge to be addressed in the project)
-One of the benefits is that over time, the school will have an educational resource database whose content has been determined by the relevant teacher before; consequently, a common database will allow the distribution of data among students and teachers for review or sharing a study. Faster operation and less computational computing resources enable the project to be applied more quickly.
+One of the benefits is that over time, the school will have an educational resource database whose content has been determined by 
+the relevant teacher before; consequently, a common database will allow the distribution of data among students and teachers for 
+review or sharing a study. Faster operation and less computational computing resources enable the project to be applied more quickly.
 
 
 4.	Resources required:
